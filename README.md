@@ -1,6 +1,6 @@
-# snapADDY REST API demo application
+# snapADDY REST API example application
 
-This is a demo application to demonstrate the workings of snapADDY's REST API.
+This is an example application to demonstrate the workings of snapADDY's REST API.
 
 ## Usage
 Make sure that the following environment variables are set:
