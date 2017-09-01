@@ -1,0 +1,124 @@
+<html lang="de">
+
+<head>
+  <title>snapADDY REST API Demo Application</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://www.snapaddy.com/assets/css/main.min.7404.css">
+</head>
+
+<body>
+  <div class="col-xs-offset-3 col-xs-6" style="margin-top: 50px; border: 1px solid #ddd; padding: 25px; border-radius: 12px;">
+    <h1 style="margin-top: 0;">Demo Form</h1>
+    <p>Please enter your contact details below.</p>
+    <form method="POST" action="/form" novalidate="novalidate">
+      <div class="row">
+        <div class="form-group col-md-3">
+          <select class="form-control" name="gender" required="" aria-required="true">
+            <option value="-1">Choose</option>
+            <option value="0">Mr.</option>
+            <option value="1">Mrs.</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <select name="title" class="form-control">
+            <option value="" selected="selected">Choose</option>
+            <option label="Dr." value="Dr.">Dr.</option>
+            <option label="Prof." value="Prof.">Prof.</option>
+            <option label="Prof. Dr." value="Prof. Dr.">Prof. Dr.</option>
+            <option label="Dipl. Ing." value="Dipl. Ing.">Dipl. Ing.</option>
+            <option label="Wirtsch. Ing." value="Wirtsch. Ing.">Wirtsch. Ing.</option>
+            <option label="Dr.-Ing." value="Dr.-Ing.">Dr.-Ing.</option>
+            <option label="Dipl.-Ing Oec." value="Dipl.-Ing Oec.">Dipl.-Ing Oec.</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="firstName" type="text" placeholder="First Name *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="lastName" type="text" placeholder="Last Name *" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <input class="form-control" name="organization" type="text" placeholder="Company Name *" required="" aria-required="true">
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="position" type="text" placeholder="Position *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="website" type="url" placeholder="Company Website *" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="phone" type="tel" placeholder="Phone *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="fax" type="tel" placeholder="Fax *" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="mobile" type="tel" placeholder="Mobile *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="email" type="email" placeholder="Email *" required="" aria-required="true">
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="street" type="text" placeholder="Street *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="zip" type="text" placeholder="ZIP *" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="city" type="text" placeholder="City *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="country" type="text" placeholder="Country *" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="state" type="text" placeholder="State *" required="" aria-required="true">
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <input class="form-control" name="linkedin" type="url" placeholder="LinkedIn Profile *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="xing" type="url" placeholder="Xing Profile *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="facebook" type="url" placeholder="Facebook Profile *" required="" aria-required="true">
+        </div>
+        <div class="form-group col-md-6">
+          <input class="form-control" name="twitter" type="url" placeholder="Twitter Profile *" required="" aria-required="true">
+        </div>
+      </div>
+
+      <hr/>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <textarea class="form-control" name="note" type="textarea" placeholder="Note" required="" aria-required="true"></textarea>
+        </div>
+      </div>
+
+      <hr/>
+      <button type="submit" class="btn btn-block btn-lg btn-primary" style="font-size: 1em;">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
