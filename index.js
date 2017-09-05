@@ -20,6 +20,7 @@ var app = express();
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.use(express.static('assets'));
 
 // Route for serving HTML form
 app.get('/', function(req, res) {
@@ -63,7 +64,7 @@ function exportContact(formData, callback) {
     'Content-Type': 'application/json; charset=utf-8',
     'Accept': 'application/json; charset=utf-8'
   };
-  var payload = formData; // mapFormDataToContact(formData);
+  var payload = formData; 
   payload.contactListId = config.CONTACT_LIST_ID;
 
   request({
