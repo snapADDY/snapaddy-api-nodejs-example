@@ -12,5 +12,3 @@ Make sure that the following environment variables are set:
 Then start the server with `npm start`.
 This starts a Node.js server that serves a demo form to export a contact to your specified contact list via snapADDY's
 REST API.
-
-`ENVIRONMENT=STAGING` can be configured to use the internal staging API.
