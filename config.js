@@ -28,6 +28,6 @@ module.exports = {
   API_TOKEN: API_TOKEN,
   CONTACT_LIST_ID: CONTACT_LIST_ID,
   ENVIRONMENT: ENVIRONMENT,
-  API_URI: (ENVIRONMENT === 'production' ? 'https://api.snapaddy.com' : 'https://staging.snapaddy.com'),
+  API_URI: 'https://api.snapaddy.com',
   PORT: PORT
 };
